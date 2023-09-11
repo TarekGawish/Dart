@@ -1,0 +1,12 @@
+void main()
+{
+
+  //variables 
+  // int
+  int firstNumber = 30;
+  int secondNumber = 20;
+
+  int ruselt = firstNumber + secondNumber;
+
+  print(ruselt);
+}
