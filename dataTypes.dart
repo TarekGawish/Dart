@@ -1,4 +1,7 @@
 void main()
 {
-  print("hi");
+  int firstNum = 50;
+  int secNum = 30;
+  int result = firstNum + secNum;
+  print(result);
 }
