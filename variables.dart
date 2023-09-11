@@ -15,9 +15,19 @@ void main() {
   //update data
   x = 6;
   x = x + 2;
-  x = x -2;
-  x = x +1;
+  x = x - 2;
+  x = x + 1;
   print(x);
 
+  //concatination
+
+  String firstName = "Tarek";
+  String lastName = "Gawesh";
+
+  print(firstName + lastName); //concatination
+  print(firstName + " " + lastName);
+
+  print('$firstName $lastName'); // The correct way
+  print('$firstName $lastName and the age is ${x+y} years'); // makeing operations
   
 }
