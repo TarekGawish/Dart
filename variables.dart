@@ -7,13 +7,13 @@ void main() {
 
   // initialization vs decleration
 
-  int x = 5; // initialization
+  int x = 7; // initialization
 
   int y; //Decleration
   y = 6;
 
   //update data
-  x = 6;
+  x = 14;
   x = x + 2;
   x = x - 2;
   x = x + 1;
@@ -28,6 +28,6 @@ void main() {
   print(firstName + " " + lastName);
 
   print('$firstName $lastName'); // The correct way
-  print('$firstName $lastName and the age is ${x+y} years'); // makeing operations
+  print('$firstName $lastName I am  ${x+y} years'); // makeing operations
   
 }
