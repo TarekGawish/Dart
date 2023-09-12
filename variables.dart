@@ -53,12 +53,42 @@ void main() {
 
   // map datatype
 
-  Map<String, String> info = 
-  {
+  Map<String, String> info = {
     "name": "tarek",
     "age": "21",
     "address": "egypt-newDamitta"
   };
 
   print(info["name"]);
+
+  //var vs dynamic
+
+  var telephone;
+  telephone = "010161355";
+  telephone = 010161355;
+
+  print(telephone);
+
+  dynamic tele;
+  tele = "1515151";
+  tele = 1515151;
+  print(tele);
+
+  //what is the differece between var and dynamic
+
+  var tele1 = 1152621;
+  // tele1 ="hi";
+  //error | because i initalize it by int value i can change the type but i can change the value
+  tele1 = 62626262;
+
+  dynamic tele2 = 651615651;
+  tele2 = "tarek"; // change of type not make errors
+
+  //final and const
+
+  // working in run time
+  final num = "25420";
+
+  //working in compile time
+  const nums = "6159";
 }
