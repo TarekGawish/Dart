@@ -13,11 +13,11 @@ void main() {
   double h = x / y;
 
   int g;
-  g = x ~/ y;
+  g = x ~/ y; // return int number
   g = x % y;
 
   //  ++ increment   and    -- decrement
-  print(x++); // print(x) and increment it (the value of x now is 11)
+  print(x++); // print(x) and increment it (the value of x now is 11) ++x --> x = x+1
   print(x);
   print(++x); // increment it and print(11)
 
@@ -63,8 +63,8 @@ void main() {
   //+=    -=    *=    /=
 
   var uu = null;
-  int io = uu ??=
-      3; //check if the variable uu is null , yes is null ok assign 3 to it , no dont make thing
+  int io = uu ??= 3;
+       //check if the variable uu is null , yes is null ok assign 3 to it , if no dont make anything
   print(io);
 
   print(io *= 5);
@@ -81,9 +81,9 @@ void main() {
 
   bool wow;
 
-  wow = trt > oio &&
-      oio <=
-          eie; // if one conditoin from two is false  the output will be false
+  wow = trt > oio && oio <= eie;
+
+ // if one conditoin from two is false  the output will be false
   wow = trt > oio ||
       oio <= eie; // if one conditoin from two is  ture the output will be true
 
