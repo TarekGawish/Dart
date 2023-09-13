@@ -12,6 +12,9 @@ void main() {
   int y; //Decleration
   y = 6;
 
+  double firstNumber = 10.55;
+
+
   //update data
   x = 14;
   x = x + 2;
@@ -87,7 +90,7 @@ void main() {
   //final and const
 
   // working in run time
-  final numttt = "25420";
+  final numttt = "25420"; // if i need data from database
 
   //working in compile time
   const nums = "6159";
