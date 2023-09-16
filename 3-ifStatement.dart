@@ -6,7 +6,7 @@ void main() {
   if (x > y) {
     print("$x is greater than $y");
   }
-
+// -------------------------------------------------
 // else if
   if (x > 0) {
     print("$x is positive number");
@@ -15,7 +15,7 @@ void main() {
   } else {
     print("$x is negative number");
   }
-
+// -------------------------------------------------
 // nested if
   int z = -3;
 
@@ -26,18 +26,18 @@ void main() {
       print("$z is smaller than zero");
     }
   }
-
+// -------------------------------------------------
   // inline if statement
 
   //condition ?  if true                  :     if false
   x > y ? print("$x is greater than $y") : print("$x is smaller than $y");
-
+// -------------------------------------------------
   //  if null
   var uu = null;
 
   int result = uu ?? x; //if uu equal to null put the value of x in the result
   print(result);
-
+// -------------------------------------------------
 // switch case
 
   int code = 60;

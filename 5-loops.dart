@@ -1,8 +1,8 @@
 void main() {
   // for loop
-
+  //    start   condition  increment
   for (var i = 1; i <= 10; i++) {
-    print(i);
+    print(i);     // loop on this 
   }
 
   List<String> names = ["tarek", "omar", "gawesh", "ali", "osama", "dodo"];
