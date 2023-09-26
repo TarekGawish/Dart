@@ -89,6 +89,13 @@ void main() {
   dynamic tele2 = 651615651;
   tele2 = "tarek"; // change of type not make errors
   print(tele2);
+
+
+  // the main defference between them 
+  //var         --------> when make intialization     can not change type but change value
+  //dynamic     --------> when make intialization     can change type and change value
+
+  
 // -------------------------------------------------
   //final and const
 
