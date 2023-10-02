@@ -1,17 +1,32 @@
+import 'dart:ffi';
+
 void main() {
-  // class.Name   object.Name  =  class.Name();
+  Students student1 = Students("tarek", 21, "sammer");
 
-  Cars civic = Cars();
+  print(
+      "the first student name is ${student1.name} and he is ${student1.age} years old and he is enroll in ${student1.semester} semester in ${student1.schoole} schoole.");
 
-  civic.printBrand();
+  Students student2 = Students("osama", 23, "winter");
+
+  print("name is ${student2.name} age is ${student2.age} semester is ${student2.semester}");
+
+  student1.study();
 }
 
-class Cars {
-  var brand;
-  var color;
-  var model;
+class Students {
+  var name;
+  var age;
+  var semester;
+  var schoole;
 
-  void printBrand() {
-    print("honda");
+//parametric constractor
+  Students(var name, var age, var semester) {
+    this.name = name;
+    this.age = age;
+    this.semester = semester;
+  }
+
+  void study() {
+    print("study");
   }
 }
