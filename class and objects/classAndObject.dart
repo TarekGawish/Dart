@@ -24,13 +24,13 @@ void main() {
 
   print("#################");
 
-  Players pedri = Players("Pedri", 78, 67);
+  Players salah = Players("Mo Salah", 90, 80);
 
-  print(pedri.name);
+  print(salah.name);
 
   print("#################");
 
-// Encapsulation 
+// Encapsulation
   People tarek = People("Tarek", true);
 
   tarek.age = 4;
@@ -54,12 +54,8 @@ class Players {
   int? shout;
 
   Players(
-    String? name,
-    int? speed,
-    int? shout,
-  ) {
-    this.name = name;
-    this.speed = speed;
-    this.shout = shout;
-  }
+    this.name,
+    this.speed,
+    this.shout,
+  );
 }

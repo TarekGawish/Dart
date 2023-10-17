@@ -16,7 +16,7 @@ class People {
     }
   }
 
-  // dynamic getAge() => this._age;       // arrow functoin
+  // dynamic getAge() => this._age;     // arrow functoin
 
 //getter 
   dynamic get age => this._age;
