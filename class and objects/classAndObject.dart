@@ -1,3 +1,4 @@
+
 import 'peopleClass.dart';
 
 void main() {
@@ -35,6 +36,21 @@ void main() {
 
   tarek.age = 4;
   print(tarek.age);
+
+  print("######################");
+  // Inheritance
+
+  Lion skar = Lion();
+  Dog boby = Dog();
+  Cat bosy = Cat();
+
+  skar.roar();
+  skar.sleep(); // from animal class
+
+  boby.woof();
+  boby.eat(); // from animal class
+
+  bosy.meow();
 }
 
 class Animals {
@@ -58,4 +74,38 @@ class Players {
     this.speed,
     this.shout,
   );
+}
+
+// inheritance
+
+class Animal {
+  void eat() {
+    print("eating");
+  }
+
+  void walk() {
+    print("walking");
+  }
+
+  void sleep() {
+    print("sleeping");
+  }
+}
+
+class Lion extends Animal {
+  void roar() {
+    print("ROAR");
+  }
+}
+
+class Dog extends Animal {
+  void woof() {
+    print("woof");
+  }
+}
+
+class Cat extends Animal {
+  void meow() {
+    print("MEOW");
+  }
 }
