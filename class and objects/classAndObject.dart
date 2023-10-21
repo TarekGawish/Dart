@@ -40,10 +40,11 @@ void main() {
   print("######################");
   // Inheritance
 
-  Lion skar = Lion();
-  Dog boby = Dog();
-  Cat bosy = Cat();
+  Lion skar = Lion(32, "Skar", "mamiles", "warm", 4);
+  Dog boby = Dog("boby", "mamiles", "warm", 4);
+  Cat bosy = Cat("bosy", "mamiles", "warm", 4);
 
+  print("name of the animal is ${skar.name} and the number of teeth is ${skar.numberOfTeeth}");
   skar.roar();
   skar.sleep(); // from animal class
 
@@ -79,6 +80,13 @@ class Players {
 // inheritance
 
 class Animal {
+  String? name;
+  String? type;
+  String? bloodType;
+  int? numberOfLegs;
+
+  Animal(this.name, this.type, this.bloodType, this.numberOfLegs);
+
   void eat() {
     print("eating");
   }
@@ -93,18 +101,30 @@ class Animal {
 }
 
 class Lion extends Animal {
+  int numberOfTeeth;
+  // suprt constractor
+
+  Lion(this.numberOfTeeth, super.name, super.type, super.bloodType,
+      super.numberOfLegs);
+
   void roar() {
     print("ROAR");
   }
 }
 
 class Dog extends Animal {
+  // super constractor
+  Dog(super.name, super.type, super.bloodType, super.numberOfLegs);
+
   void woof() {
     print("woof");
   }
 }
 
 class Cat extends Animal {
+
+  // super constractor
+  Cat(super.name, super.type, super.bloodType, super.numberOfLegs);
   void meow() {
     print("MEOW");
   }
