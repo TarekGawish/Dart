@@ -28,14 +28,6 @@ void main() {
 
   print(salah.name);
 
-  print("#################");
-
-// Encapsulation
-  People tarek = People("Tarek", true);
-
-  tarek.age = 4;
-  print(tarek.age);
-
   print("######################");
   // Inheritance
 
