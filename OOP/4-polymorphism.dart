@@ -1,6 +1,19 @@
-void main() {}
+void main() {
+  Lion skar = Lion(32, "Skar", "mamiles", "warm", 4);
+  Lion semba = Lion(44, "Semba", "mamles", "warm", 4);
+  Dog boby = Dog("boby", "mamiles", "warm", 4);
+  Cat bosy = Cat("bosy", "mamiles", "warm", 4);
+  Cat kity = Cat("Kity", "mamiles", "warm", 4);
 
-abstract class Animal { // abstract calss
+  // Polymorphism
+  List<Animal> zoo = [skar, bosy, boby, kity, semba];
+
+  Map<int, Animal> zoos = {1: boby, 2: kity, 3: skar};
+
+  print(zoos[1]);
+}
+
+class Animal {
   String? name;
   String? type;
   String? bloodType;
@@ -9,7 +22,9 @@ abstract class Animal { // abstract calss
   Animal(this.name, this.type, this.bloodType, this.numberOfLegs);
 
 // abstraction
-  void eat();
+  void eat() {
+    print("eating");
+  }
 
   void walk() {
     print("walking");
@@ -21,13 +36,12 @@ abstract class Animal { // abstract calss
 }
 
 class Lion extends Animal {
-  
   @override
   void eat() {
     print("Lion eating");
   }
 
-  int numberOfTeeth; 
+  int numberOfTeeth;
 
   // suprt constractor
   Lion(this.numberOfTeeth, super.name, super.type, super.bloodType,
@@ -52,7 +66,6 @@ class Dog extends Animal {
     print("woof");
   }
 }
-
 
 class Cat extends Animal {
   @override
