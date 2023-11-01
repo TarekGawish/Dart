@@ -4,6 +4,7 @@ void main() {
 
   simba.walk();
   snaker.crawl();
+  simba.playing();
 }
 
 class Animals {
@@ -18,18 +19,25 @@ class Animals {
   }
 }
 
+
 mixin MammalsMixin {
   walk() {}
+}
+
+mixin PetMixin {
+  playing() {
+    print("pet is playing");
+  }
 }
 
 mixin ReptilesMixin {
   crawl() {}
 }
 
-class Lions extends Animals with MammalsMixin {
+class Lions extends Animals with MammalsMixin, PetMixin {
   Lions(super.name, super.type, int numberOfLegs);
 
-  void walk() {
+  walk() {
     print("walking");
   }
 }
